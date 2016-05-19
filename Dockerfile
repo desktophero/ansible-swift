@@ -19,3 +19,4 @@ RUN pip install python-openstackclient
 
 # including serverspec for future needs
 RUN gem install serverspec
+RUN gem install rake 
