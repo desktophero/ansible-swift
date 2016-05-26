@@ -5,7 +5,7 @@ MAINTAINER Jason Walker <desktophero@gmail.com>
 RUN yum -y install epel-release; yum clean all
 RUN yum -y update; yum clean all
 RUN yum -y upgrade; yum clean all
-RUN yum -y install kernel-devel ansible jq; yum clean all
+RUN yum -y install kernel-devel ansible-1.9.1 jq; yum clean all
 RUN yum groupinstall -y 'Development Tools'; yum clean all
 RUN yum -y install python-pip python-setuptools python-devel; yum clean all
 RUN yum -y install ruby ruby-devel ruby-bundler; yum clean all
