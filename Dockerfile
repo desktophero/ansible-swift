@@ -20,3 +20,7 @@ RUN pip install python-openstackclient
 # including serverspec for future needs
 RUN gem install serverspec
 RUN gem install rake 
+
+RUN curl -sSLo /tmp/terraform.zip https://releases.hashicorp.com/terraform/0.6.16/terraform_0.6.16_linux_amd64.zip
+RUN unzip -d /usr/local/bin/ /tmp/terraform.zip
+RUN rm -f /tmp/terraform.zip
