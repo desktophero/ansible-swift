@@ -18,5 +18,4 @@ RUN pip install python-neutronclient
 RUN pip install python-openstackclient
 
 # including serverspec for future needs
-RUN gem install serverspec
-RUN gem install rake 
+RUN gem install rake rubocop serverspec
